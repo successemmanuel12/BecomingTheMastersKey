@@ -1,7 +1,8 @@
 package com.success.becomingthemasterskey;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
@@ -17,6 +18,8 @@ public class Heading extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heading);
+
+
 
         // getting the listView on the menu
         listView = findViewById(R.id.list_data);
@@ -43,10 +46,7 @@ public class Heading extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.abt_dev){
-
-        }
-        else if (id == R.id.settings){
-
+            startActivity(new Intent(this, Dev.class));
         }
         return super.onOptionsItemSelected(item);
     }

@@ -9,11 +9,14 @@
         android:roundIcon="@mipmap/ic_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Book"
+        <activity android:name=".Settings"></activity>
+        <activity android:name=".Dev" />
+        <activity
+            android:name=".Book"
             android:parentActivityName=".Heading">
-            <meta-data android:name="parentActivity"
-                android:value="com.success.becomingthemasterskey.Heading">
-            </meta-data>
+            <meta-data
+                android:name="parentActivity"
+                android:value="com.success.becomingthemasterskey.Heading" />
         </activity>
         <activity android:name=".Launch">
             <intent-filter>
