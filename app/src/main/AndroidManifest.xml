@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.success.becomingthemasterskey">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -9,7 +8,6 @@
         android:roundIcon="@mipmap/ic_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Settings"></activity>
         <activity android:name=".Dev" />
         <activity
             android:name=".Book"
@@ -18,7 +16,8 @@
                 android:name="parentActivity"
                 android:value="com.success.becomingthemasterskey.Heading" />
         </activity>
-        <activity android:name=".Launch">
+        <activity android:name=".Launch"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
